@@ -6,15 +6,6 @@ from starkware.cairo.common.serialize import serialize_word
 from starkware.cairo.common.pow import pow 
 
 func z_transform{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(ar : felt*, size : felt) -> (res : felt){
-    alloc_locals;
-
-    let (local X) = alloc();
-
-    // let (sum) = z_local_sum(ar, size);
-    // let (vall) = pow(sum,2);
-    // %{
-    //     print(f"The sum is {ids.vall}")
-    // %}
     z_go_through_array(ar, size, 0);
     return (res = 1);
 }
