@@ -53,7 +53,7 @@ func z_go_through_array_2{range_check_ptr}(ar : felt*, size : felt, n : felt, k 
     %{print(f"The power is {ids.power}")%}
     
     let sum = current_elt * power + next_sum;
-    return (res = sum); 
+    return (res = sum);     
 }
 
 func z_local_operation(ar : felt*, k : felt, n : felt){
