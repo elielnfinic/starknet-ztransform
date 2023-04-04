@@ -17,8 +17,7 @@ func test_z_transform{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_ch
     assert [freq + 3] = 4;
     assert [freq + 4] = 5;
 
-    let (test) = z_transform(freq, arr_size);
-    
+    z_transform(freq, arr_size);
 
     assert 1 = 1;
 
