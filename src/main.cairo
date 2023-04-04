@@ -11,18 +11,16 @@ struct SpecialNumber{
     y : felt,
 }
 
-func z_transform{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(ar : felt*, size : felt) -> (res : SpecialNumber){
-    let div_ = Math64x61.exp(-3);
-    let div_2 = Math64x61.div(1000,3);
-    let j = 1000 / 3;
-    %{ print(f"Division result is {ids.div_}") %}
-    %{ print(f"Division result is {ids.div_2}") %}
-    %{ print(f"Division result is {12/123}") %}
-    z_go_through_array(ar, size, 0);
-    return (res = SpecialNumber(x = 32,y = 64));
+func z_transform{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(ar : felt*, size : felt){
+    alloc_locals;
+    let (local freq_arr) = alloc();
+    z_go_through_array(ar, size, 0, freq_arr);
+    //Get second element of freq_arr
+    let first_elt = [freq_arr + 1];
+    %{ print(f"First element is {ids.first_elt}")%}
 }
 
-func z_go_through_array{range_check_ptr}(ar : felt*, size : felt, n : felt){
+func z_go_through_array{range_check_ptr}(ar : felt*, size : felt, n : felt, freq_arr : felt*){
     if(n == size){
         %{ print("End array")%}
         return ();
@@ -32,7 +30,8 @@ func z_go_through_array{range_check_ptr}(ar : felt*, size : felt, n : felt){
     %{print(f"Showing {ids.current_elt}")%}
     let (sum) = z_go_through_array_2(ar, size, 0, n);
     %{print(f"\tThe sum is {ids.sum}")%}
-    z_go_through_array(ar, size, n + 1);
+    assert [freq_arr + n] = sum;
+    z_go_through_array(ar, size, n + 1, freq_arr);
     return ();
 }
 
