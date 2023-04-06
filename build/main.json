@@ -914,7 +914,7 @@
             "0x480a7ffc7fff8000",
             "0x480a7ffd7fff8000",
             "0x480680017fff8000",
-            "0x2",
+            "0x3",
             "0x4802800180028000",
             "0x4802800280028000",
             "0x4802800380028000",
@@ -2067,7 +2067,7 @@
                             "offset": 0
                         },
                         "pc": 665,
-                        "value": "cast(2, felt)"
+                        "value": "cast(3, felt)"
                     }
                 ],
                 "type": "reference"
@@ -2120,7 +2120,7 @@
                             "offset": 0
                         },
                         "pc": 665,
-                        "value": "cast((([fp + (-7)], [fp + (-6)], [fp + (-5)], [fp + (-4)], [fp + (-3)]), (2, [[fp + 2] + 1], [[fp + 2] + 2], [[fp + 2] + 3], [[fp + 2] + 4], 0)), __main__.Ztrans)"
+                        "value": "cast((([fp + (-7)], [fp + (-6)], [fp + (-5)], [fp + (-4)], [fp + (-3)]), (3, [[fp + 2] + 1], [[fp + 2] + 2], [[fp + 2] + 3], [[fp + 2] + 4], 0)), __main__.Ztrans)"
                     }
                 ],
                 "type": "reference"
@@ -2295,7 +2295,7 @@
                             "offset": 0
                         },
                         "pc": 665,
-                        "value": "cast((2, [[fp + 2] + 1], [[fp + 2] + 2], [[fp + 2] + 3], [[fp + 2] + 4], 0), __main__.Transform)"
+                        "value": "cast((3, [[fp + 2] + 1], [[fp + 2] + 2], [[fp + 2] + 3], [[fp + 2] + 4], 0), __main__.Transform)"
                     }
                 ],
                 "type": "reference"
@@ -12429,7 +12429,7 @@
                         "offset": 0
                     },
                     "pc": 665,
-                    "value": "cast(2, felt)"
+                    "value": "cast(3, felt)"
                 },
                 {
                     "ap_tracking_data": {
@@ -12445,7 +12445,7 @@
                         "offset": 0
                     },
                     "pc": 665,
-                    "value": "cast((2, [[fp + 2] + 1], [[fp + 2] + 2], [[fp + 2] + 3], [[fp + 2] + 4], 0), __main__.Transform)"
+                    "value": "cast((3, [[fp + 2] + 1], [[fp + 2] + 2], [[fp + 2] + 3], [[fp + 2] + 4], 0), __main__.Transform)"
                 },
                 {
                     "ap_tracking_data": {
@@ -12453,7 +12453,7 @@
                         "offset": 0
                     },
                     "pc": 665,
-                    "value": "cast((([fp + (-7)], [fp + (-6)], [fp + (-5)], [fp + (-4)], [fp + (-3)]), (2, [[fp + 2] + 1], [[fp + 2] + 2], [[fp + 2] + 3], [[fp + 2] + 4], 0)), __main__.Ztrans)"
+                    "value": "cast((([fp + (-7)], [fp + (-6)], [fp + (-5)], [fp + (-4)], [fp + (-3)]), (3, [[fp + 2] + 1], [[fp + 2] + 2], [[fp + 2] + 3], [[fp + 2] + 4], 0)), __main__.Ztrans)"
                 },
                 {
                     "ap_tracking_data": {

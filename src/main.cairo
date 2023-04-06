@@ -132,7 +132,7 @@ func calc_trans{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_pt
     let x4 = [freq_arr + 3];
     let x5 = [freq_arr + 4];
 
-    let e = 2;
+    let e = 3;
 
     let in_s = Inputs(num_1 = n1, num_2 = n2, num_3 = n3, num_4 = n4, num_5 = n5);
     let tr_s = Transform(x = e, num_1 = x2, num_2 = x3, num_3 = x4, num_4 = x5, num_5 = 0);
