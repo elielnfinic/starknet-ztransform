@@ -54,7 +54,7 @@ func z_transform{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_p
     //Get second element of freq_arr
     let first_elt = [freq_arr];
     let second_elt = [freq_arr + 1];
-    %{ print(f"First element is {ids.first_elt} {ids.second_elt}")%}
+    // %{ print(f"First element is {ids.first_elt} {ids.second_elt}")%}
     return ();
 }
 
