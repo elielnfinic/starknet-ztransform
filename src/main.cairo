@@ -29,7 +29,6 @@ struct Inputs{
 }
 
 struct Transform{
-    x : felt, 
     num_1 : felt, 
     num_2 : felt, 
     num_3 : felt, 
@@ -92,7 +91,7 @@ func calc_and_save_trans{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range
     let e = 2;
 
     let in_s = Inputs(num_1 = n1, num_2 = n2, num_3 = n3, num_4 = n4, num_5 = n5);
-    let tr_s = Transform(x = e, num_1 = x2, num_2 = x3, num_3 = x4, num_4 = x5, num_5 = 0);
+    let tr_s = Transform(num_1 = x1, num_2 = x2, num_3 = x3, num_4 = x4, num_5 = x5);
     let my_z_trans = Ztrans(input=in_s, transform = tr_s);
     trans.write(caller_address, my_z_trans);
 
@@ -124,10 +123,10 @@ func calc_trans{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_pt
     let x4 = [freq_arr + 3];
     let x5 = [freq_arr + 4];
 
-    let e = 3;
+    let e = 3; //This could be 2.718281828459045 (Euler number) if it was supported
 
     let in_s = Inputs(num_1 = n1, num_2 = n2, num_3 = n3, num_4 = n4, num_5 = n5);
-    let tr_s = Transform(x = e, num_1 = x2, num_2 = x3, num_3 = x4, num_4 = x5, num_5 = 0);
+    let tr_s = Transform(num_1 = x1, num_2 = x2, num_3 = x3, num_4 = x4, num_5 = x5);
     let my_z_trans = Ztrans(input=in_s, transform = tr_s);
 
     return (z = my_z_trans);
