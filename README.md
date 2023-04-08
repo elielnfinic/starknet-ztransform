@@ -8,13 +8,14 @@ I am planning to upgrade to `Cairo 1.0` in the upcoming days.
 Latest uploads links : 
 
 ```
-Contract address: 0x05b60fc1222b9a4255397e9b9672535bc3aa23550bdf6d22872e3d770d8d48c9
-StarkScan https://testnet.starkscan.co/contract/0x05b60fc1222b9a4255397e9b9672535bc3aa23550bdf6d22872e3d770d8d48c9
-Voyager   https://goerli.voyager.online/contract/0x05b60fc1222b9a4255397e9b9672535bc3aa23550bdf6d22872e3d770d8d48c9
+Contract address: 0x03dc33b404f1c9b2803441bfe6f157406a6dfacb7e66213058de3133da873951
+StarkScan https://testnet.starkscan.co/contract/0x03dc33b404f1c9b2803441bfe6f157406a6dfacb7e66213058de3133da873951
+Voyager   https://goerli.voyager.online/contract/0x03dc33b404f1c9b2803441bfe6f157406a6dfacb7e66213058de3133da873951
 
-Transaction hash: 0x06ba05536c6ce627208f9a4721ea384c005435f576a20721fa34a818ca64c676
-StarkScan https://testnet.starkscan.co/tx/0x06ba05536c6ce627208f9a4721ea384c005435f576a20721fa34a818ca64c676
-Voyager   https://goerli.voyager.online/tx/0x06ba05536c6ce627208f9a4721ea384c005435f576a20721fa34a818ca64c676
+Transaction hash: 0x000798ae5acb1628485e4285738d3c20a27511e0c288dba0b6501c442b2edb57
+StarkScan https://testnet.starkscan.co/tx/0x000798ae5acb1628485e4285738d3c20a27511e0c288dba0b6501c442b2edb57
+Voyager   https://goerli.voyager.online/tx/0x000798ae5acb1628485e4285738d3c20a27511e0c288dba0b6501c442b2edb57
+
 ```
 
 # Chat 

@@ -58,23 +58,15 @@ func z_transform{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_p
     return ();
 }
 
-@view
+
 func z_transform_1{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}( ar_len : felt, ar : felt*)  -> (res_len : felt, res : felt*){
     alloc_locals;
     let (local freq_arr) = alloc();
     z_go_through_array(ar, ar_len, 0, freq_arr);
-    //Get second element of freq_arr
     let first_elt = [freq_arr + 1];
-    // %{ print(f"First element is {ids.first_elt}")%}
-    return (res_len=1,res=freq_arr);
+    return (res_len=ar_len,res=freq_arr);
 }
 
-
-@view 
-func get_increment{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(number : felt) -> (res : felt){
-    let res = number + 12;
-    return (res = res);
-}
 
 @external
 func calc_and_save_trans{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(n1 : felt, n2 : felt, n3 : felt, n4 : felt, n5 : felt){

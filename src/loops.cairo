@@ -20,11 +20,12 @@ func z_go_through_array_2{range_check_ptr}(ar : felt*, size : felt, n : felt, k 
     }
 
     let current_elt = [ar + n];
+    let e = 3;
     
     let (next_sum) = z_go_through_array_2(ar, size, n + 1, k);
     let k_1 = k;
     let n_1 = n;
-    let (local power) = pow(200,(k_1 * n_1));
+    let (local power) = pow(e,(k_1 * n_1));
     
     let sum = current_elt * power + next_sum;
     return (res = sum);     
